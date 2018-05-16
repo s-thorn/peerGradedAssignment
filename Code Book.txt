@@ -1,0 +1,20 @@
+
+Study Design: For information on the study design, please see raw data README and text files. 
+
+Summary Choices: The raw data was altered as specified by the Coursera assignment as well as tidy data standards.
+The training and the test sets were clipped together to create one data set.
+Only the measurements on the mean and standard deviation for each measurement were extracted.  meanFreq and gravityMean measurements were specifically excluded.
+Used descriptive activity names to name the activities in the data set.  
+Labeled the data set with descriptive variable names which came from the features text file included in the raw data. (Some of the column names were eventually separated and renamed.)
+From the data set in step 4, created a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+Instruction List: To create the tidy data set, save the run_analysis.R file and the read it into RStudio. 
+
+Code Book:
+"activity" Range of 6.  Either "WALKING", "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING", "LAYING"
+"subject"  Range of 30. There were 30 volunteers who participated
+"set" originally from the training data set or test data set               
+"signal" sensor information from the experiment (see raw data README text file) Acc data is measured in standard gravity units 'g'  Gyro data is measured in radians/second
+"mean_or_std" describes what type of measurement is in the measurement column
+"direction" X, Y, or Z axis
+"measurement" either a mean or standard deviation measurement based on the mean_or_std column
