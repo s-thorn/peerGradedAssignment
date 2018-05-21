@@ -20,7 +20,7 @@ activity_labels <- read.table(file.path(getwd(), "/UCI HAR Dataset/activity_labe
 add_data <- rbind(train_set, test_set)
 # The features text file only describes columns 1-549 but the data sets have 561 columns. 
 # What columns are missed in the features text file?
-features <- read.table("C:/Users/thorn/Desktop/Coursera/Getting and Cleaning Data/UCI HAR Dataset/features.txt")
+features <- read.table(file.path(getwd(),"/UCI HAR Dataset/features.txt"))
 features[550:561,1:2]
 # Need to figure out which columns in the features text file are mean and standard deviation measurements.
 # Specific enough to exclude meanFreq and gravityMean measurements since the instructions did not specify these measurements explicitly.
